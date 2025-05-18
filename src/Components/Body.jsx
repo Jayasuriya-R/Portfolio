@@ -1,11 +1,18 @@
 import React from 'react'
 import Home from './Home'
+import { createBrowserRouter, Outlet } from 'react-router-dom'
+import Header from './Header'
 
 const Body = () => {
+  
+     
   return (
-    <div className='mt-[5%] ml-[8%]'>
-      <Home/>
+    <>
+    <Header/> 
+    <div className='ml-[8%] mt-[10%]'>  
+      <Outlet/>
     </div>
+    </>
   )
 }
 
