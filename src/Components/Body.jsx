@@ -9,7 +9,7 @@ const Body = () => {
   return (
     <>
     <Header/> 
-    <div className='ml-[8%] mt-[10%]'>  
+    <div className='ml-[8%] mt-[12%]'>  
       <Outlet/>
     </div>
     </>
