@@ -7,8 +7,8 @@ const Header = () => {
       <div className="flex justify-center">
         <div className="w-3/12 mt-9 p-3 font-bold flex justify-between bg-white border border-gray-200 rounded-full shadow-lg hover:border-teal-500 fixed">
           <Link to ="/"> <span className="hover:text-teal-500 cursor-pointer pl-2">Home</span></Link>
-          <Link to="/about"><span className="hover:text-teal-500 cursor-pointer">About</span></Link>
           <Link to='/projects'><span className="hover:text-teal-500 cursor-pointer">Projects</span></Link>
+          <Link to="/about"><span className="hover:text-teal-500 cursor-pointer">About</span></Link>
           <Link to="/contact"><span className="hover:text-teal-500 cursor-pointer pr-2">
             Contact
           </span></Link>

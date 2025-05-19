@@ -9,7 +9,7 @@ const About = () => {
     <div className="grid grid-cols-12 ">
       <div className="col-span-5">
         <img className="h-8/12 w-10/12 rounded-lg" src={img} />
-        <div className="flex mt-[5%]">
+        <div className="flex mt-[5%] ml-5">
           <div className="px-2">
             <img className="w-25 h-25" src={react} />
           </div> 

@@ -1,10 +1,14 @@
 import React from "react";
+import ProjectCard from "./ProjectCard";
+import ProjectsContainer from "./ProjectsContainer";
+
 
 const Projects = () => {
+
   return (
 
-      <div>
-        
+      <div className="flex ">
+        <ProjectsContainer/>
       </div>
   );
 };
