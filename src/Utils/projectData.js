@@ -44,11 +44,11 @@ export const projectData = [
     auth: false,
     liveUrl: "https://youtube-clone-sable-three.vercel.app/",
     efficiency: "Optimized API fetching and component re-rendering for smooth user experience.",
-    coverImg: "https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg"
+    coverImg: "https://i.insider.com/5dc47f123afd37518905aba6?width=700"
   },
   {
     id: 3,
-    title: "Swiggy Clone",
+    title: "Swiggy Clone (Food ordering App)",
     shortDesc: "A food ordering app UI clone that replicates Swiggy's user experience.",
     detailedDesc:
       "A front-end clone of the Swiggy app built with React.js featuring restaurant listings, menu browsing, and order placement interfaces. The app uses Context API for state management and styled-components for styling.",
@@ -67,7 +67,7 @@ export const projectData = [
     auth: true,
     liveUrl: "https://food-app-phi-rouge.vercel.app/",
     efficiency: "Efficient state updates and minimal re-renders ensure smooth user interaction.",
-    coverImg: "https://upload.wikimedia.org/wikipedia/commons/4/49/Swiggy_logo.svg"
+    coverImg: "https://res.cloudinary.com/abserve-tech/image/upload/v1745324836/abservetech-next/FoodStar%20Page/foodstar-banner_fww6rm_xi2kse.webp"
   },
   {
     id: 4,
@@ -87,7 +87,7 @@ export const projectData = [
     auth: false,
     liveUrl: "https://mini-todo-app-react.vercel.app/",
     efficiency: "Minimal DOM manipulation and effective use of React state keeps the app performant.",
-    coverImg: "https://cdn-icons-png.flaticon.com/512/3208/3208756.png"
+    coverImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFAH9lWbD-5AqZ085ABNrO1MD0l0LPebHK4A&s"
   },
   {
     id: 5,
@@ -107,6 +107,6 @@ export const projectData = [
     auth: false,
     liveUrl: "https://mini-calc-app.vercel.app/",
     efficiency: "Lightweight with instant feedback on user input for smooth calculation.",
-    coverImg: "https://cdn-icons-png.flaticon.com/512/1034/1034002.png"
+    coverImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2wrkJKHTgrNW_0uEf7k4sRTVIzhqZFgnChQ&s"
   }
 ];

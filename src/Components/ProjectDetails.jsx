@@ -15,7 +15,7 @@ const ProjectDetails = () => {
   return (
     <div className="flex font-serif">
       <div className="flex-row w-7/12">
-        <div className=" font-bold text-4xl w-4/12 mb-3">
+        <div className=" font-bold text-4xl w-9/12 mb-3">
           <h1>{project.title}</h1>
         </div>
         <div className="flex my-3">

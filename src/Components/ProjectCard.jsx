@@ -4,7 +4,7 @@ const ProjectCard = ({projData}) => {
     
   return (
     <div className="m-3">
-      <div className="w-[25rem] h-[20rem] cursor-pointer hover:bg-gray-100 rounded-3xl p-4">
+      <div className="w-[25rem] h-[20rem] cursor-pointer hover:bg-gray-100 rounded-3xl p-6">
         <div className="flex">
            
     { projData.technologies?.map((x)=>{
