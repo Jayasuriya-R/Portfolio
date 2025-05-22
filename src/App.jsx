@@ -14,7 +14,7 @@ function App() {
       element: <Body />,
       children: [
         {
-          path: "/",
+          path: "/home",
           element: <Home />,
         },
         {
