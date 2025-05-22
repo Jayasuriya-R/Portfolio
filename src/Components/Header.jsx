@@ -65,7 +65,7 @@ const Header = () => {
           } flex`}
         >
           {["Home", "Projects", "About", "Contact"].map((text) => (
-            <Link to={`/${text.toLowerCase()}`} key={text}>
+            <Link to={`${text.toLowerCase()}`} key={text}>
               <span
                 className={`hover:text-amber-500 dark:hover:text-amber-300 transition`}
               >
