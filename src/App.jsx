@@ -10,12 +10,13 @@ import ProjectDetails from "./Components/ProjectDetails";
 function App() {
   const appRouter = createBrowserRouter([
     {
-      path: "/home",
+      path: "/",
       element: <Body />,
       children: [
         {
           path: "/home",
           element: <Home />,
+          index: true,
         },
         {
           path: "/contact",
