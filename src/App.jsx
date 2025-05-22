@@ -10,7 +10,7 @@ import ProjectDetails from "./Components/ProjectDetails";
 function App() {
   const appRouter = createBrowserRouter([
     {
-      path: "/",
+      path: "/home",
       element: <Body />,
       children: [
         {
