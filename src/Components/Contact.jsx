@@ -60,7 +60,11 @@ const Contact = () => {
 
         <div className="space-y-4">
           <div className="flex items-center justify-center">
-            <img className="w-8 h-8 sm:w-10 sm:h-10 my-2 inline mr-2" src={github} alt="GitHub" />
+            <img
+              className="w-8 h-8 sm:w-10 sm:h-10 my-2 inline mr-2"
+              src={github}
+              alt="GitHub"
+            />
             <a
               href="https://github.com/Jayasuriya-R"
               target="_blank"
@@ -76,7 +80,11 @@ const Contact = () => {
             </a>
           </div>
           <div className="flex items-center justify-center">
-            <img className="w-8 h-8 sm:w-10 sm:h-10 my-2 inline mr-2" src={linkdin} alt="LinkedIn" />
+            <img
+              className="w-8 h-8 sm:w-10 sm:h-10 my-2 inline mr-2"
+              src={linkdin}
+              alt="LinkedIn"
+            />
             <a
               href="https://www.linkedin.com/in/jayasuriya-r/"
               target="_blank"
@@ -92,7 +100,11 @@ const Contact = () => {
             </a>
           </div>
           <div className="flex items-center justify-center">
-            <img className="w-8 h-8 sm:w-10 sm:h-10 my-2 inline mr-2" src={instagram} alt="Instagram" />
+            <img
+              className="w-8 h-8 sm:w-10 sm:h-10 my-2 inline mr-2"
+              src={instagram}
+              alt="Instagram"
+            />
             <a
               href="#"
               target="_blank"
