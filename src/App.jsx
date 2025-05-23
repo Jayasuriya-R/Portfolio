@@ -14,24 +14,24 @@ function App() {
       element: <Body />,
       children: [
         {
-          path: "home",
+          path: "/",
           element: <Home />,
           index: true,
         },
         {
-          path: "contact",
+          path: "/contact",
           element: <Contact />,
         },
         {
-          path: "about",
+          path: "/about",
           element: <About />,
         },
         {
-          path: "projects",
+          path: "/projects",
           element: <Projects />,
         },
         {
-          path: "projectdetails/:projId",
+          path: "/projectdetails/:projId",
           element: <ProjectDetails />,
         },
       ],

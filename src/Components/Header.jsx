@@ -60,12 +60,12 @@ const Header = () => {
         <div
           className={`w-[400px] mt-3 px-6 py-2 font-semibold justify-between items-center border rounded-full shadow-md fixed top-20 transition-colors duration-300 ${
             theme
-              ? "bg-[#4A3525] border-stone-700 text-amber-200"
+              ? "bg-[#4A3525] border-stone-700 text-[#F4EDE4]"
               : "bg-[#FFF6E5] border-amber-200 text-stone-800"
           } flex`}
         >
           {["Home", "Projects", "About", "Contact"].map((text) => (
-            <Link to={`${text.toLowerCase()}`} key={text}>
+            <Link to={text == "Home"?`/`:`${text.toLowerCase()}`} key={text}>
               <span
                 className={`hover:text-amber-500 dark:hover:text-amber-300 transition`}
               >
