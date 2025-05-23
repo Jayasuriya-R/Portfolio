@@ -7,7 +7,7 @@ const Projects = () => {
   const theme = useSelector((store) => store.Toggle.theme);
 
   // Define the deeper brown and dark content background colors consistent with About & Contact
-  const darkMainBg = "#4E3C2B"; // Approximate deeper brown
+  const darkMainBg = "#333"; // Approximate deeper brown
   const darkContentBg = "#292826"; // Dark gray for content area
 
   return (

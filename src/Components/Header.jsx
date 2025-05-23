@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header
       className={`relative z-50 font-serif transition-colors duration-500 ${
-        theme ? "bg-[#3E2C1C] text-[#F5EBDD]" : "bg-[#FAF3E0] text-[#5A3E1B]"
+        theme ? "bg-[#333] text-[#F5EBDD]" : "bg-[#FAF3E0] text-[#5A3E1B]"
       }`}
     >
       {/* Logo */}
@@ -39,7 +39,7 @@ const Header = () => {
 
       {/* Mobile Menu Toggle */}
       <button
-        className="md:hidden fixed top-20 right-6 z-50"
+        className="md:hidden fixed top-15 right-6 z-50"
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? (
@@ -58,9 +58,9 @@ const Header = () => {
       {/* Desktop Navigation */}
       <nav className="hidden md:flex justify-center">
         <div
-          className={`w-[400px] mt-3 px-6 py-2 font-semibold justify-between items-center border rounded-full shadow-md fixed top-20 transition-colors duration-300 ${
+          className={`w-[400px] mt-3 px-6 py-2 font-semibold justify-between items-center border rounded-full shadow-md fixed top-10 transition-colors duration-300 ${
             theme
-              ? "bg-[#4A3525] border-stone-700 text-[#F4EDE4]"
+              ? "bg-[#333] border-stone-700 text-[#F4EDE4]"
               : "bg-[#FFF6E5] border-amber-200 text-stone-800"
           } flex`}
         >
@@ -81,13 +81,13 @@ const Header = () => {
         <div
           className={`md:hidden absolute top-24 right-4 left-4 rounded-xl shadow-xl p-4 space-y-4 text-center transition-all duration-300 ${
             theme
-              ? "bg-[#4A3525] border border-stone-700 text-amber-200"
+              ? "bg-[#333] border border-stone-700 text-amber-200"
               : "bg-[#FFF6E5] border border-amber-200 text-stone-800"
           }`}
         >
           {["Home", "Projects", "About", "Contact"].map((text) => (
             <Link
-              to={`/${text.toLowerCase()}`}
+              to={text == "Home"?`/`:`${text.toLowerCase()}`}
               key={text}
               onClick={() => setIsOpen(false)}
               className={`block hover:text-amber-500 dark:hover:text-amber-300`}

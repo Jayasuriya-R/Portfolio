@@ -11,7 +11,7 @@ const Body = () => {
     <div
       className={`min-h-screen ${
         theme 
-          ? "bg-[#4E3C2B] text-[#3E3A36]"  // warm dark brown background + warm off-white text
+          ? "bg-[#333] text-[#3E3A36]"  // warm dark brown background + warm off-white text
           : "bg-[#F9F5EF] text-[#F4EDE4]"  // light warm beige bg + deep brown text
       } transition-colors duration-500`}
     >

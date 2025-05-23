@@ -12,7 +12,7 @@ const ProjectDetails = () => {
   // Define colors consistent with the overall theme
   // These should ideally be defined in your tailwind.config.js for cleaner class names
   // But keeping them here as per your "no need to add any other stuffs" request.
-  const darkMainBg = "#4E3C2B";
+  const darkMainBg = "#333";
   const lightMainBg = "#F9F5EF";
   const darkMainText = "#F4EDE4";
   const lightMainText = "#3E3A36";

@@ -8,7 +8,7 @@ const About = () => {
   const theme = useSelector((store) => store.Toggle.theme);
 
   // Define the deeper brown and dark content background colors
-  const darkMainBg = "#4E3C2B"; // Approximate deeper brown
+  const darkMainBg = "#333"; // Approximate deeper brown
   const darkContentBg = "#292826"; // Dark gray for content area
 
   return (
@@ -78,9 +78,9 @@ const About = () => {
               </div>
               <div>
                 <span className="font-bold">Accenture</span>
-                <div className="text-sm text-gray-600 dark:text-gray-300">
+                <div className="text-sm text-gray-400 dark:text-gray-300">
                   Associate Software Engineer
-                  <span className="ml-4 text-gray-500">2025 - present</span>
+                  <span className="ml-4 text-gray-400">2025 - present</span>
                 </div>
               </div>
             </div>

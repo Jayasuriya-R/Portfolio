@@ -9,7 +9,7 @@ const Home = () => {
   const theme = useSelector((store) => store.Toggle.theme);
 
   // Define main background and text colors consistent across all components (from Body)
-  const darkMainBg = "#4E3C2B"; // Deeper brown
+  const darkMainBg = "#333"; // Deeper brown
   const lightMainBg = "#F9F5EF"; // Creamy off-white/beige
   const darkMainText = "#F4EDE4"; // Creamy off-white for dark mode text
   const lightMainText = "#3E3A36"; // Dark brownish-gray for light mode text
