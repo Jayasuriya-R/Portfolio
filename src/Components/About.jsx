@@ -74,13 +74,13 @@ const About = () => {
             </div>
             <div className="flex items-center gap-4">
               <div className="w-14 h-14 bg-white dark:bg-[#292826] p-2 rounded-full shadow-md">
-                <img src={acc} className="w-full h-full object-contain" alt="Accenture" />
+                <img src="https://logos-world.net/wp-content/uploads/2020/06/Accenture-Emblem.png" className="w-full h-full object-contain" alt="Accenture" />
               </div>
               <div>
                 <span className="font-bold">Accenture</span>
                 <div className="text-sm text-gray-400 dark:text-gray-300">
                   Associate Software Engineer
-                  <span className="ml-4 text-gray-400">2025 - present</span>
+                  <span className="ml-4 text-gray-400">2023 - 2025</span>
                 </div>
               </div>
             </div>
