@@ -1,6 +1,6 @@
 import React from "react";
 import img from "../assets/coverImg.png";
-import acc from "../assets/Accenture-Logo.png";
+
 import { useSelector } from "react-redux";
 import { projectData } from "../Utils/projectData";
 

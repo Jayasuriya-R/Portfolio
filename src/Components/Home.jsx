@@ -4,10 +4,13 @@ import linkdin from "../assets/linkdin.png";
 import instagram from "../assets/instagram.png";
 import ProjectsContainer from "./ProjectsContainer";
 import { useSelector } from "react-redux";
+import profile from '../assets/yup.png'
+import profile1 from '../assets/hey.png'
 
 const Home = () => {
   const theme = useSelector((store) => store.Toggle.theme);
-
+  const num = Math.floor(Math.random() * 10)
+  console.log(num)
   // Define main background and text colors consistent across all components (from Body)
   const darkMainBg = "#333"; // Deeper brown
   const lightMainBg = "#F9F5EF"; // Creamy off-white/beige
@@ -95,7 +98,7 @@ const Home = () => {
           <div className="md:col-span-5 mt-10 md:mt-0 flex justify-center md:justify-end items-center p-4 sm:p-6 md:p-0">
             <img
               className="w-full max-w-sm rounded-2xl shadow-lg shadow-[#C9973E]/50"
-              src="https://reactfolio.tharindu.dev/homepage.jpg" // Using placeholder image for now
+              src={num>5?profile1:profile}// Using placeholder image for now
               alt="Profile"
             />
           </div>
