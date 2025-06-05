@@ -21,7 +21,11 @@ const About = () => {
     >
       {/* Left Column */}
       <div className="md:col-span-5 flex flex-col items-center">
-        <div className={`rounded-lg w-full max-w-md shadow-md ${theme ? `bg-[${darkContentBg}] p-6` : 'bg-white p-6'}`}>
+        <div
+          className={`rounded-lg w-full max-w-md shadow-md ${
+            theme ? `bg-[${darkContentBg}] p-6` : "bg-white p-6"
+          }`}
+        >
           <img className="rounded-lg w-full" src={img} alt="Profile" />
         </div>
 
@@ -51,7 +55,13 @@ const About = () => {
 
       {/* Right Column */}
       <div className="md:col-span-7">
-        <div className={`${theme ? `bg-[${darkContentBg}] rounded-3xl shadow-md p-6` : 'bg-[#FFF8F0] rounded-3xl border shadow-md p-6'}`}>
+        <div
+          className={`${
+            theme
+              ? `bg-[${darkContentBg}] rounded-3xl shadow-md p-6`
+              : "bg-[#FFF8F0] rounded-3xl border shadow-md p-6"
+          }`}
+        >
           <h1 className="font-bold text-3xl sm:text-4xl mb-6">
             "I’m Jayasuriya, coding from the heart of Coimbatore"
           </h1>
@@ -74,7 +84,11 @@ const About = () => {
             </div>
             <div className="flex items-center gap-4">
               <div className="w-14 h-14 bg-white dark:bg-[#292826] p-2 rounded-full shadow-md">
-                <img src="https://logos-world.net/wp-content/uploads/2020/06/Accenture-Emblem.png" className="w-full h-full object-contain" alt="Accenture" />
+                <img
+                  src="https://logos-world.net/wp-content/uploads/2020/06/Accenture-Emblem.png"
+                  className="w-full h-full object-contain"
+                  alt="Accenture"
+                />
               </div>
               <div>
                 <span className="font-bold">Accenture</span>
@@ -88,19 +102,24 @@ const About = () => {
 
           {/* About Paragraph */}
           <p className="text-lg leading-relaxed">
-            I've had the opportunity to work on diverse projects during my time at
-            Accenture, where I contributed to building and maintaining
+            I've had the opportunity to work on diverse projects during my time
+            at Accenture, where I contributed to building and maintaining
             enterprise-level applications with a focus on performance,
             scalability, and user experience. Alongside my professional journey,
             I've also developed several personal projects — from web apps to UI
             experiments — that reflect my passion for clean code and modern
             design.
-            <br /><br />
-            Many of these personal projects are open-source and available for
-            others to explore or contribute to. If you're interested, feel free to
-            dive into the code, share feedback, or suggest improvements. I believe
-            in continuous learning through collaboration and am always open to new
-            ideas, challenges, and ways to grow as a developer.
+            <br />
+            <br />
+            I've had the opportunity to work on a range of enterprise-level
+            applications at Accenture, where I focused on building performant
+            and scalable front-end solutions using React.js, Redux, and Tailwind
+            CSS. My contributions emphasized improving user experience,
+            optimizing performance, and delivering modular, maintainable code.
+            In parallel, I’ve developed several personal projects — including
+            clones of platforms like Netflix, YouTube, and Swiggy — which
+            showcase my strong grasp of modern UI/UX practices, responsive
+            design, and clean component architecture.
           </p>
         </div>
       </div>
