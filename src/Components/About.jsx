@@ -102,24 +102,24 @@ const About = () => {
 
           {/* About Paragraph */}
           <p className="text-lg leading-relaxed">
-            I've had the opportunity to work on diverse projects during my time
-            at Accenture, where I contributed to building and maintaining
-            enterprise-level applications with a focus on performance,
-            scalability, and user experience. Alongside my professional journey,
-            I've also developed several personal projects — from web apps to UI
-            experiments — that reflect my passion for clean code and modern
-            design.
+            During my time at Accenture, I’ve had the opportunity to contribute
+            to a range of enterprise-level applications, focusing on building
+            scalable and performant front-end solutions using technologies like
+            React.js, Redux, and Tailwind CSS. My work has centered on enhancing
+            user experience, improving application performance, and delivering
+            modular, maintainable code. These experiences have strengthened my
+            ability to solve complex problems while maintaining a user-centric
+            approach to development.
             <br />
             <br />
-            I've had the opportunity to work on a range of enterprise-level
-            applications at Accenture, where I focused on building performant
-            and scalable front-end solutions using React.js, Redux, and Tailwind
-            CSS. My contributions emphasized improving user experience,
-            optimizing performance, and delivering modular, maintainable code.
-            In parallel, I’ve developed several personal projects — including
-            clones of platforms like Netflix, YouTube, and Swiggy — which
-            showcase my strong grasp of modern UI/UX practices, responsive
-            design, and clean component architecture.
+            Alongside my professional work, I’ve developed several personal
+            projects that showcase my enthusiasm for modern web development.
+            These include fully functional clones of platforms like Netflix,
+            YouTube, and Swiggy, where I applied best practices in responsive
+            design, clean component architecture, and intuitive UI/UX. These
+            projects not only reflect my technical capabilities but also my
+            passion for continuous learning and building polished, real-world
+            applications.
           </p>
         </div>
       </div>
