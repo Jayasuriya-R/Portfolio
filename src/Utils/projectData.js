@@ -110,3 +110,41 @@ export const projectData = [
     coverImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2wrkJKHTgrNW_0uEf7k4sRTVIzhqZFgnChQ&s"
   }
 ];
+
+export const certificationsData = [
+  {
+    id:1,
+    title: "Hacker Rank - ReactJS",
+    description: "Certified in React on HackerRank, demonstrating expertise in building component-based UIs, managing state with useState, handling side effects using useEffect, and implementing routing, conditional rendering, and performance optimizations with hooks and memoization.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
+    link:"https://www.hackerrank.com/certificates/iframe/47ae376e504e"
+  },
+  {
+    id:2,
+    title: "Hacker Rank - JavaScript",
+    description: "Achieved JavaScript certification on HackerRank, reflecting strong command over core concepts including DOM manipulation, event handling, ES6+ features (arrow functions, promises), and writing clean, functional code for interactive web applications.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
+    link:"https://www.hackerrank.com/certificates/iframe/b47fd220ca82"
+  },
+  {
+    id:3,
+    title: "Hacker Rank - Python",
+    description: "Earned Python certification on HackerRank, demonstrating hands-on expertise in data structures (lists, dictionaries, sets), control flow, functions and working with libraries such as math for problem-solving.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
+    link:"https://www.hackerrank.com/certificates/iframe/eedc5b012fdb"
+  },
+  {
+    id:4,
+    title: "Hacker Rank - SQL",
+    description: "Completed SQL certification on HackerRank, showcasing proficiency in querying relational databases using SELECT, JOINs, GROUP BY, HAVING, subqueries, and window functions to analyze and manipulate structured data.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
+    link:"https://www.hackerrank.com/certificates/iframe/48d44d3a7d32"
+  },
+  {
+    id:5,
+    title: "Udemy - ASP.NET",
+    description: "Completed the ASP.NET Core MVC certification on Udemy, demonstrating proficiency in building MVC pattern in .NET applications.",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHcbInkd7b7boVsHoVaTL6rjbjP9sVYZfg1UaVOfia1SUvISrN2_qq88Wu58p3VCuEoUE&usqp=CAU",
+    link:"https://www.hackerrank.com/certificates/iframe/47ae376e504e"
+  },
+]

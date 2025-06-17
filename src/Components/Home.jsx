@@ -4,13 +4,15 @@ import linkdin from "../assets/linkdin.png";
 import instagram from "../assets/instagram.png";
 import ProjectsContainer from "./ProjectsContainer";
 import { useSelector } from "react-redux";
-import profile from '../assets/yup.png'
-import profile1 from '../assets/hey.png'
+import profile from "../assets/yup.png";
+import profile1 from "../assets/hey.png";
+import Certifications from "./Certifications";
+import { certificationsData } from "../Utils/projectData";
 
 const Home = () => {
   const theme = useSelector((store) => store.Toggle.theme);
-  const num = Math.floor(Math.random() * 10)
-  console.log(num)
+  const num = Math.floor(Math.random() * 10);
+  console.log(num);
   // Define main background and text colors consistent across all components (from Body)
   const darkMainBg = "#333"; // Deeper brown
   const lightMainBg = "#F9F5EF"; // Creamy off-white/beige
@@ -40,22 +42,31 @@ const Home = () => {
             </h1>
             <p
               className={`text-base sm:text-lg font-semibold italic my-5
-                ${theme ? "text-amber-200" : "text-amber-700"}`} 
+                ${theme ? "text-amber-200" : "text-amber-700"}`}
             >
-              {"< Every website is a story — crafted with code, designed with passion, and brought to life through innovation. />"}
+              {
+                "< Every website is a story — crafted with code, designed with passion, and brought to life through innovation. />"
+              }
             </p>
             <p className="text-lg sm:text-xl md:text-2xl mb-8 leading-relaxed">
-              I am a front-end developer with expertise in React.js and modern web
-              technologies. I have hands-on experience in building responsive,
-              scalable, and user-centric web applications using frameworks like
-              React, Redux, and libraries like Tailwind CSS. I enjoy translating
-              complex ideas into seamless, intuitive user interfaces. With a
-              strong focus on clean code, reusability, and performance, I strive
-              to create high-quality front-end solutions that align with industry
-              standards.
+              I am a front-end developer with expertise in React.js and modern
+              web technologies. I have hands-on experience in building
+              responsive, scalable, and user-centric web applications using
+              frameworks like React, Redux, and libraries like Tailwind CSS. I
+              enjoy translating complex ideas into seamless, intuitive user
+              interfaces. With a strong focus on clean code, reusability, and
+              performance, I strive to create high-quality front-end solutions
+              that align with industry standards.
             </p>
             <div className="flex space-x-6">
-              <a href="https://github.com/Jayasuriya-R" target="_blank" rel="noopener noreferrer" aria-label="GitHub"> {/* Updated href to your GitHub */}
+              <a
+                href="https://github.com/Jayasuriya-R"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                {" "}
+                {/* Updated href to your GitHub */}
                 <img
                   className={`w-12 h-12 rounded-full p-2 transition-colors duration-200
                     ${
@@ -67,7 +78,14 @@ const Home = () => {
                   alt="GitHub"
                 />
               </a>
-              <a href="https://www.linkedin.com/in/jayasuriya-r/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"> {/* Updated href to your LinkedIn */}
+              <a
+                href="https://www.linkedin.com/in/jayasuriya-r/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                {" "}
+                {/* Updated href to your LinkedIn */}
                 <img
                   className={`w-12 h-12 rounded-lg p-2 transition-colors duration-200
                     ${
@@ -79,7 +97,14 @@ const Home = () => {
                   alt="LinkedIn"
                 />
               </a>
-              <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Instagram"> {/* Placeholder for Instagram, update yourusername */}
+              <a
+                href="https://instagram.com/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                {" "}
+                {/* Placeholder for Instagram, update yourusername */}
                 <img
                   className={`w-12 h-12 rounded-xl p-2 transition-colors duration-200
                     ${
@@ -98,7 +123,7 @@ const Home = () => {
           <div className="md:col-span-5 mt-10 md:mt-0 flex justify-center md:justify-end items-center p-4 sm:p-6 md:p-0">
             <img
               className="w-full max-w-sm rounded-2xl shadow-lg shadow-[#C9973E]/50"
-              src={num>5?profile1:profile}// Using placeholder image for now
+              src={num > 5 ? profile1 : profile} // Using placeholder image for now
               alt="Profile"
             />
           </div>
@@ -114,8 +139,22 @@ const Home = () => {
               : `bg-[${lightMainBg}] text-[${lightMainText}]`
           }`}
       >
-        <div className="w-full max-w-6xl mx-auto"> {/* This ensures the ProjectsContainer is centered and max-width aligned */}
+        <div className="w-full max-w-6xl mx-auto">
+          {" "}
+          {/* This ensures the ProjectsContainer is centered and max-width aligned */}
           <ProjectsContainer />
+        </div>
+        <div className="w-full px-4 sm:px-8 lg:px-16 py-6">
+          <h1 className="text-3xl sm:text-4xl font-extrabold mb-2 text-center tracking-tight">
+            Certifications
+          </h1>
+          <hr className="my-4 mx-auto w-10/12 border-t-4 border-gray-300 rounded-full" />
+
+          <div className="flex flex-col gap-6">
+            {certificationsData.map((x, index) => (
+              <Certifications key={index} data={x} isDarkMode={theme} />
+            ))}
+          </div>
         </div>
       </div>
     </>
