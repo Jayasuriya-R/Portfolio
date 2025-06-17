@@ -145,6 +145,6 @@ export const certificationsData = [
     title: "Udemy - ASP.NET",
     description: "Completed the ASP.NET Core MVC certification on Udemy, demonstrating proficiency in building MVC pattern in .NET applications.",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHcbInkd7b7boVsHoVaTL6rjbjP9sVYZfg1UaVOfia1SUvISrN2_qq88Wu58p3VCuEoUE&usqp=CAU",
-    link:"https://www.hackerrank.com/certificates/iframe/47ae376e504e"
+    link:"https://www.udemy.com/certificate/UC-b7059da1-c5c4-4380-8d7d-b9f54454d891/"
   },
 ]
