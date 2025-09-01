@@ -108,7 +108,34 @@ export const projectData = [
     liveUrl: "https://mini-calc-app.vercel.app/",
     efficiency: "Lightweight with instant feedback on user input for smooth calculation.",
     coverImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2wrkJKHTgrNW_0uEf7k4sRTVIzhqZFgnChQ&s"
-  }
+  },
+  {
+  id: 6,
+  title: "Ping Me (Chat App)",
+  shortDesc: "A full-stack real-time chat application built with React, Firebase, and Redux.",
+  detailedDesc:
+    "Ping Me is a real-time chat application developed with React, Redux, Firebase, Tailwind CSS, and Vite. It allows users to chat instantly with Firebase snapshots, manage contacts by adding or blocking users, and provides smooth UI/UX with tooltips and responsive design. Authentication is handled via Firebase Auth, ensuring secure access.",
+  features: [
+    "Real-time chat using Firebase Snapshots",
+    "User authentication with Firebase Auth",
+    "Add and block/unblock user functionality",
+    "Profile & info panel with user status",
+    "Tooltip-driven micro-interactions",
+    "Responsive modern UI with Tailwind CSS"
+  ],
+  technologies: [
+    { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+    { name: "Redux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
+    { name: "Tailwind CSS", icon: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" },
+    { name: "Firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
+    { name: "Vite", icon: "https://vitejs.dev/logo.svg" }
+  ],
+  auth: true,
+  liveUrl: "https://chat-app-rho-gold.vercel.app/",
+  githubUrl: "https://github.com/Jayasuriya-R/Chat_App",
+  efficiency: "Efficient state handling with Redux and seamless real-time updates powered by Firebase.",
+  coverImg: "https://plus.unsplash.com/premium_photo-1720032304972-1f1142e73253?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2hhdCUyMGFwcHxlbnwwfHwwfHx8MA%3D%3D"
+}
 ];
 
 export const certificationsData = [
