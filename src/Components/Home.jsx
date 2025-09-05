@@ -119,7 +119,7 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Right Content (Image) */}
+          
           <div className="md:col-span-5 mt-10 md:mt-0 flex justify-center md:justify-end items-center p-4 sm:p-6 md:p-0">
             <img
               className="w-full max-w-sm rounded-2xl shadow-lg shadow-[#C9973E]/50"
