@@ -28,7 +28,7 @@ const Footer = () => {
 
 
   return (
-    // Main footer container - responsive padding, centered content
+    
     <div
       className={`w-full py-8 px-4 sm:px-6 md:px-8 mt-12 transition-colors duration-500
         ${theme ? `bg-[${darkMainBg}] text-[${darkMainText}]` : `bg-[${lightMainBg}] text-[${lightMainText}]`}`}
