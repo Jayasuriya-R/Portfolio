@@ -24,7 +24,7 @@ export const projectData = [
   liveUrl: "https://chat-app-rho-gold.vercel.app/",
   githubUrl: "https://github.com/Jayasuriya-R/Chat_App",
   efficiency: "Efficient state handling with Redux and seamless real-time updates powered by Firebase.",
-  coverImg: "https://plus.unsplash.com/premium_photo-1720032304972-1f1142e73253?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2hhdCUyMGFwcHxlbnwwfHwwfHx8MA%3D%3D"
+  coverImg: "https://www.shutterstock.com/shutterstock/photos/1679858260/display_1500/stock-photo-chat-bot-concept-d-isometric-style-with-mobile-on-blue-background-for-chatting-technology-1679858260.jpg"
 },
   {
     id: 2,
