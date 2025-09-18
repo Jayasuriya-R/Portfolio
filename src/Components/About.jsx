@@ -7,7 +7,7 @@ import { projectData } from "../Utils/projectData";
 const About = () => {
   const theme = useSelector((store) => store.Toggle.theme);
 
-  // Define the deeper brown and dark content background colors
+  /
   const darkMainBg = "#333"; // Approximate deeper brown
   const darkContentBg = "#292826"; // Dark gray for content area
 
