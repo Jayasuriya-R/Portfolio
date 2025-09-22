@@ -7,7 +7,7 @@ import instagram from "../assets/instagram.png";
 const Contact = () => {
   const theme = useSelector((store) => store.Toggle.theme);
 
-  // Define the deeper brown and dark content background colors consistent with About component
+  
   const darkMainBg = "#333"; // Approximate deeper brown
   const darkContentBg = "#292826"; // Dark gray for content area
 
