@@ -6,8 +6,6 @@ import { projectData } from "../Utils/projectData";
 
 const About = () => {
   const theme = useSelector((store) => store.Toggle.theme);
-
-  /
   const darkMainBg = "#333"; // Approximate deeper brown
   const darkContentBg = "#292826"; // Dark gray for content area
 
