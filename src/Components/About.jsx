@@ -36,7 +36,7 @@ const About = () => {
 
         {/* Resume Button */}
         <div className="mt-6">
-          <a href="/Jayasuriya_Resume_2025.pdf" download>
+          <a href="/Jayasuriya_Resume.pdf" download>
             <button
               className={`px-4 py-2 rounded-full border-2 font-medium text-lg transition-all
                 ${
