@@ -2,7 +2,7 @@ export const projectData = [
   {
     id: 1,
     title: "DevLink",
-    shortDesc: "A full-stack AI-powered developer networking platform with real-time communication.",
+    shortDesc: "An AI-powered networking playground for developers—swipe right if you like code or bad puns.",
     detailedDesc:
       "DevLink is a full-stack MERN application designed to help developers grow after connecting. Unlike traditional networking platforms, DevLink combines developer discovery, AI-driven mentorship, and real-time collaboration. Users can swipe developer profiles (similar to Tinder, but for development), match for collaboration, receive personalized AI-guided learning roadmaps, stay updated with skill-based tech news, and communicate instantly through real-time chat.",
     features: [
@@ -34,7 +34,7 @@ export const projectData = [
   {
     id: 2,
     title: "Ping Me (Chat App)",
-    shortDesc: "A full-stack real-time chat application built with React, Firebase, and Redux.",
+    shortDesc: "A chat app that lets you ping friends and procrastinate in real time.",
     detailedDesc:
       "Ping Me is a real-time chat application developed with React, Redux, Firebase, Tailwind CSS, and Vite. It allows users to chat instantly with Firebase snapshots, manage contacts by adding or blocking users, and provides smooth UI/UX with tooltips and responsive design. Authentication is handled via Firebase Auth, ensuring secure access.",
     features: [
@@ -62,7 +62,7 @@ export const projectData = [
   {
     id: 3,
     title: "Netflix-GPT",
-    shortDesc: "A React.js clone of Netflix UI with dynamic content and Redux state management.",
+    shortDesc: "Netflix clone: binge responsibly (or don’t, it's just code).",
     detailedDesc:
       "A front-end clone of the Netflix UI built with React.js. This project features a sleek, responsive design and displays movie data fetched from a public API (TMDB). It includes dynamic banners, category sliders, and routing for details view. Tailwind CSS is used for styling, while Redux manages global state such as watchlists and current selection.",
     features: [
@@ -86,7 +86,7 @@ export const projectData = [
   {
     id: 4,
     title: "YouTube Clone",
-    shortDesc: "A functional YouTube front-end clone built with React and API integration.",
+    shortDesc: "YouTube clone for when you want the feeling without the ads.",
     detailedDesc:
       "This project replicates the YouTube interface using React. It fetches video data via YouTube's API and allows users to search, browse, and watch videos. The UI is responsive and supports a clean video player and sidebar navigation.",
     features: [
@@ -109,7 +109,7 @@ export const projectData = [
   {
     id: 5,
     title: "Swiggy Clone (Food ordering App)",
-    shortDesc: "A food ordering app UI clone that replicates Swiggy's user experience.",
+    shortDesc: "Swiggy clone: eat now, code later (or vice versa).",
     detailedDesc:
       "A front-end clone of the Swiggy app built with React.js featuring restaurant listings, menu browsing, and order placement interfaces. The app uses Context API for state management and styled-components for styling.",
     features: [

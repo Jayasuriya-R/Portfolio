@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* make sure no horizontal scroll appears */
+body {
+  overflow-x: hidden;
+}

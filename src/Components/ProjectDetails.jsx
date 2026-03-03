@@ -36,9 +36,10 @@ const ProjectDetails = () => {
           className={`p-6 sm:p-10 rounded-3xl shadow-lg text-center
             ${theme ? `bg-[${darkContentBg}]` : `bg-[${lightContentBg}]`}`}
         >
-          <h1 className="text-3xl sm:text-4xl font-bold text-red-500 mb-4">Project Not Found</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold text-red-500 mb-4">Oops! Project Not Found</h1>
           <p className={`${theme ? 'text-gray-300' : 'text-gray-700'} text-lg`}>
-            The project you are looking for does not exist.
+            Either you took a wrong turn, or I deleted the evidence. Try
+            another project.
           </p>
           {/* Added a link back to projects page for better UX */}
           <p className={`${theme ? 'text-gray-300' : 'text-gray-700'} text-lg mt-2`}>
@@ -105,7 +106,9 @@ const ProjectDetails = () => {
             <h1 className="font-bold text-2xl sm:text-3xl mb-3">Features</h1>
             <ul className="list-disc list-inside space-y-1 sm:space-y-2 mb-6">
               {project.features.map((i, idx) => (
-                <li key={idx} className="text-base sm:text-lg pb-1">{i}</li>
+                <li key={idx} className="text-base sm:text-lg pb-1 hover:text-amber-300 transition-colors">
+                  {i}
+                </li>
               ))}
             </ul>
             {/* Added conditional rendering for efficiency if it exists */}

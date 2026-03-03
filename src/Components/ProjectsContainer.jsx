@@ -15,12 +15,11 @@ const ProjectsContainer = () => {
     // - Removed w-screen to prevent overflow issues.
     // - Added flex-wrap and justify-center to properly arrange and center ProjectCards.
     // - Added some horizontal padding (px-4) to prevent cards from touching screen edges on small devices.
-    <div className="flex flex-wrap justify-center gap-6 p-4 md:p-6 lg:p-8">
+    <div className={`flex flex-wrap justify-center gap-6 p-4 md:p-6 lg:p-8 transition-colors duration-500
+        ${theme ? 'bg-gradient-to-br from-[#2a2927] via-[#3b3a36] to-[#4a4843]' : 'bg-gradient-to-br from-amber-50 to-pink-50'}`}>
       {projectData.map((x) => {
         return (
-          // Link component wraps the ProjectCard
           <Link to={`/projectdetails/${x.id}`} key={x.id}>
-            {/* Pass the theme prop down to ProjectCard if ProjectCard relies on it */}
             <ProjectCard projData={x} theme={theme} />
           </Link>
         );

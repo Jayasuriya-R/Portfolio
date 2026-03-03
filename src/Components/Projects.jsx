@@ -29,22 +29,21 @@ const Projects = () => {
               : "bg-[#FFF8F0] text-[#3E3A36]"
           }`}
       >
-        <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6">
-          Things I’ve Built to Leave My Mark on the Tech Universe
+        <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 text-amber-400 animate-[pulse_3s_infinite]">
+          Projects I've Built While Pretending to Sleep
         </h1>
         <p
           className={`text-base sm:text-lg md:text-xl lg:text-2xl font-serif leading-relaxed
             ${theme ? "text-[#E0E0E0]" : "text-gray-700"}`}
         >
-          Over the years, I’ve crafted a diverse range of projects—from sleek
-          front-end interfaces to full-stack web. Each project reflects my
-          commitment to creating seamless, user-friendly experiences with clean,
-          efficient code. Many of these projects are open-source and available
-          for anyone to explore, contribute to, or build upon. If any of my work
-          sparks your interest, I invite you to dive into the code, share your
-          ideas, or suggest improvements. I believe collaboration is key to
-          growth and innovation, and I’m always excited to connect with fellow
-          developers, exchange feedback, and push boundaries together.
+          Over the years, I’ve whipped up everything from sleek front‑end widgets to
+          full-stack contraptions—mostly fueled by strong coffee and stronger
+          curiosity. Each project is a playground for clean code, sharp UX, and
+          maybe a few inside jokes in the comments. Most of them are open-source
+          (because sharing is caring), so feel free to poke around, submit a PR,
+          or just raise an eyebrow. Collaboration makes code better, so if
+          anything here sparks an idea—or a critique—let’s connect and break
+          stuff together (in a good way).
         </p>
       </div>
 

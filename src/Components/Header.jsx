@@ -13,9 +13,13 @@ const Header = () => {
 
   return (
     <header
-      className={`relative z-50 font-serif transition-colors duration-500 ${
-        theme ? "bg-[#333] text-[#F5EBDD]" : "bg-[#FAF3E0] text-[#5A3E1B]"
-      }`}
+      className={`sticky top-0 z-50 font-serif transition-colors duration-500 backdrop-blur-sm shadow-md
+        ${
+          theme
+            ? "bg-gradient-to-r from-[#333] via-[#444] to-[#333] text-[#F5EBDD]"
+            : "bg-gradient-to-r from-[#FAF3E0] via-[#ffffff] to-[#FAF3E0] text-[#5A3E1B]"
+        }
+      `}
     >
       {/* Logo */}
       <img
@@ -39,7 +43,7 @@ const Header = () => {
 
       {/* Mobile Menu Toggle */}
       <button
-        className="md:hidden fixed top-25 right-6 z-50"
+        className="md:hidden fixed top-6 right-6 z-50 p-2 rounded-full hover:bg-amber-200 transition-colors"
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? (
@@ -58,16 +62,17 @@ const Header = () => {
       {/* Desktop Navigation */}
       <nav className="hidden md:flex justify-center">
         <div
-          className={`w-[400px] mt-3 px-6 py-2 font-semibold justify-between items-center border rounded-full shadow-md fixed top-10 transition-colors duration-300 ${
-            theme
-              ? "bg-[#333] border-stone-700 text-[#F4EDE4]"
-              : "bg-[#FFF6E5] border-amber-200 text-stone-800"
-          } flex`}
+          className={`max-w-[90vw] w-full sm:w-[400px] mt-3 px-6 py-2 font-semibold justify-between items-center border rounded-full shadow-md fixed top-10 transition-transform duration-300 transform hover:scale-105
+            ${
+              theme
+                ? "bg-gradient-to-r from-amber-300 to-amber-500 border-stone-700 text-[#F4EDE4]"
+                : "bg-gradient-to-r from-amber-200 to-amber-400 border-amber-200 text-stone-800"
+            } flex`}
         >
           {["Home", "Projects", "About", "Contact"].map((text) => (
             <Link to={text == "Home"?`/`:`${text.toLowerCase()}`} key={text}>
               <span
-                className={`hover:text-amber-500 dark:hover:text-amber-300 transition`}
+                className={`hover:text-amber-500 dark:hover:text-amber-300 transition underline-offset-4 hover:underline`}
               >
                 {text}
               </span>
@@ -79,18 +84,20 @@ const Header = () => {
       {/* Mobile Navigation */}
       {isOpen && (
         <div
-          className={`md:hidden absolute top-24 right-4 left-4 rounded-xl shadow-xl p-4 space-y-4 text-center transition-all duration-300 ${
-            theme
-              ? "bg-[#333] border border-stone-700 text-amber-200"
-              : "bg-[#FFF6E5] border border-amber-200 text-stone-800"
-          }`}
+          className={`md:hidden absolute top-24 right-4 left-4 rounded-xl shadow-xl p-4 space-y-4 text-center transition-all duration-300
+            ${
+              theme
+                ? "bg-gradient-to-br from-[#333] to-[#444] border border-stone-700 text-amber-200"
+                : "bg-gradient-to-br from-[#FFF6E5] to-[#FAF3E0] border border-amber-200 text-stone-800"
+            }
+          `}
         >
           {["Home", "Projects", "About", "Contact"].map((text) => (
             <Link
               to={text == "Home"?`/`:`${text.toLowerCase()}`}
               key={text}
               onClick={() => setIsOpen(false)}
-              className={`block hover:text-amber-500 dark:hover:text-amber-300`}
+              className={`block hover:text-amber-500 dark:hover:text-amber-300 underline-offset-4 hover:underline`}
             >
               {text}
             </Link>

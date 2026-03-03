@@ -17,11 +17,11 @@ const ProjectCard = ({ projData }) => {
   return (
     <div className="m-3 flex justify-center">
       <div
-        className={`w-full sm:w-[22rem] md:w-[25rem] h-auto cursor-pointer rounded-3xl p-6 transition-colors duration-300 transform hover:-translate-y-1 hover:shadow-lg
+        className={`w-full sm:w-[22rem] md:w-[25rem] h-auto cursor-pointer rounded-3xl p-6 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 hover:shadow-lg
           ${
             theme
-              ? `bg-[${darkCardBg}] text-[${darkCardText}] hover:bg-[${darkCardHoverBg}]`
-              : `bg-[${lightCardBg}] text-[${lightCardText}] hover:bg-[${lightCardHoverBg}]`
+              ? `bg-[${darkCardBg}] text-[${darkCardText}] hover:bg-[${darkCardHoverBg}] border-2 border-transparent hover:border-amber-400`
+              : `bg-[${lightCardBg}] text-[${lightCardText}] hover:bg-[${lightCardHoverBg}] border-2 border-transparent hover:border-amber-700`
           }
         `}
       >

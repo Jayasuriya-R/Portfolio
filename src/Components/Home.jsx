@@ -12,7 +12,6 @@ import { certificationsData } from "../Utils/projectData";
 const Home = () => {
   const theme = useSelector((store) => store.Toggle.theme);
   const num = Math.floor(Math.random() * 10);
-  console.log(num);
   // Define main background and text colors consistent across all components (from Body)
   const darkMainBg = "#333"; // Deeper brown
   const lightMainBg = "#F9F5EF"; // Creamy off-white/beige
@@ -28,8 +27,8 @@ const Home = () => {
         className={`min-h-screen px-4 py-8 transition-colors duration-500
           ${
             theme
-              ? `bg-[${darkMainBg}] text-[${darkMainText}]`
-              : `bg-[${lightMainBg}] text-[${lightMainText}]`
+              ? `bg-gradient-to-br from-[${darkMainBg}] to-[#111] text-[${darkMainText}]`
+              : `bg-gradient-to-br from-[${lightMainBg}] to-[#fff] text-[${lightMainText}]`
           }
           flex flex-col items-center justify-center`}
       >
@@ -37,26 +36,26 @@ const Home = () => {
         <div className="w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-6 font-serif">
           {/* Left Content (Text and Social Links) */}
           <div className="md:col-span-7 flex flex-col justify-center p-4 sm:p-6 md:p-0">
-            <h1 className="font-extrabold text-4xl sm:text-5xl md:text-6xl mt-4 mb-4">
-              Hi👋, I’m a Front-End Developer
+            <h1 className="font-extrabold text-4xl sm:text-5xl md:text-6xl mt-4 mb-4 animate-[pulse_3s_infinite]">
+              Hi 👋, I’m Jayasuriya – front‑end wizard & occasional CSS magician!
             </h1>
             <p
-              className={`text-base sm:text-lg font-semibold italic my-5
+              className={`text-base sm:text-lg font-semibold italic my-5 pointer-events-none
                 ${theme ? "text-amber-200" : "text-amber-700"}`}
             >
               {
-                "< Every website is a story — crafted with code, designed with passion, and brought to life through innovation. />"
+                "< Every site I touch tells a story — with code, caffeine, and questionable jokes. />"
               }
             </p>
             <p className="text-lg sm:text-xl md:text-2xl mb-8 leading-relaxed">
-              I am a front-end developer with expertise in React.js and modern
-              web technologies. I have hands-on experience in building
-              responsive, scalable, and user-centric web applications using
-              frameworks like React, Redux, and libraries like Tailwind CSS. I
-              enjoy translating complex ideas into seamless, intuitive user
-              interfaces. With a strong focus on clean code, reusability, and
-              performance, I strive to create high-quality front-end solutions
-              that align with industry standards.
+              I’m a front-end developer who turns caffeine and curiosity into
+              clean, maintainable interfaces. My toolkit includes React.js,
+              Redux, and Tailwind CSS, plus a healthy dose of stubbornness when it
+              comes to fixing bugs. I love making apps that feel fast, look
+              sharp, and work beautifully on phones, tablets, or whatever
+              futuristic device you can think of. When I’m not debugging, I’m
+              probably building another Netflix clone just because I can – ask me
+              about it, I dare you.
             </p>
             <div className="flex space-x-6">
               <a
@@ -65,14 +64,12 @@ const Home = () => {
                 rel="noopener noreferrer"
                 aria-label="GitHub"
               >
-                {" "}
-                {/* Updated href to your GitHub */}
                 <img
-                  className={`w-12 h-12 rounded-full p-2 transition-colors duration-200
+                  className={`w-12 h-12 rounded-full p-2 transition-all duration-200 transform hover:scale-110
                     ${
                       theme
-                        ? "bg-[#A47551] hover:bg-[#C8A97E]" // Dark theme social icon background
-                        : "bg-[#D9B382] hover:bg-[#C9973E]" // Light theme social icon background
+                        ? "bg-[#A47551] hover:bg-[#C8A97E]"
+                        : "bg-[#D9B382] hover:bg-[#C9973E]"
                     }`}
                   src={github}
                   alt="GitHub"
@@ -122,7 +119,7 @@ const Home = () => {
           
           <div className="md:col-span-5 mt-10 md:mt-0 flex justify-center md:justify-end items-center p-4 sm:p-6 md:p-0">
             <img
-              className="w-full max-w-sm rounded-2xl shadow-lg shadow-[#C9973E]/50"
+              className="w-full max-w-sm rounded-2xl shadow-lg shadow-pink-400/50 transform transition-transform duration-500 hover:scale-105"
               src={num > 5 ? profile1 : profile} // Using placeholder image for now
               alt="Profile"
             />

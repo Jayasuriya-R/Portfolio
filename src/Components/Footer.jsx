@@ -31,7 +31,7 @@ const Footer = () => {
     
     <div
       className={`w-full py-8 px-4 sm:px-6 md:px-8 mt-12 transition-colors duration-500
-        ${theme ? `bg-[${darkMainBg}] text-[${darkMainText}]` : `bg-[${lightMainBg}] text-[${lightMainText}]`}`}
+        ${theme ? `bg-gradient-to-r from-[${darkMainBg}] via-[#444] to-[#333] text-[${darkMainText}]` : `bg-gradient-to-r from-[${lightMainBg}] via-[#fff] to-[${lightMainBg}] text-[${lightMainText}]`}`}
     >
       {/* Horizontal Rule (Divider) - theme-aware */}
       <hr className={`border-t-2 mb-6 ${theme ? "bg-white" : lightBorderColor}`}></hr>
@@ -68,7 +68,7 @@ const Footer = () => {
 
         {/* Copyright Text - theme-aware */}
         <div className={`text-center text-sm sm:text-base font-semibold ${theme ? darkCopyrightText : lightCopyrightText}`}>
-          © {new Date().getFullYear()} Jayasuriya. All Rights Reserved.
+          © {new Date().getFullYear()} Jayasuriya. All Rights Reserved. Made with <span className="text-red-500">♥</span> and a lot of coffee.
         </div>
 
       </div>

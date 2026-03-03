@@ -30,7 +30,12 @@ const About = () => {
         {/* Tech Stack Icons */}
         <div className="flex flex-wrap justify-center mt-6 gap-4">
           {projectData?.[1]?.technologies?.map((x, i) => (
-            <img key={i} className="w-12 h-12" src={x.icon} alt={`tech-${i}`} />
+            <img
+              key={i}
+              className="w-12 h-12 transition-transform duration-200 hover:scale-110"
+              src={x.icon}
+              alt={`tech-${i}`}
+            />
           ))}
         </div>
 
@@ -38,14 +43,14 @@ const About = () => {
         <div className="mt-6">
           <a href="/Jayasuriya_Resume.pdf" download>
             <button
-              className={`px-4 py-2 rounded-full border-2 font-medium text-lg transition-all
+              className={`px-4 py-2 rounded-full border-2 font-medium text-lg transition-transform duration-200 transform hover:scale-105
                 ${
                   theme
                     ? "border-amber-400 text-amber-300 hover:bg-amber-300 hover:text-[#2F2E2C]"
                     : "border-amber-700 text-amber-700 hover:bg-amber-700 hover:text-white"
                 }`}
             >
-              Check out my resume
+              Download my resume (it's short, I promise)
             </button>
           </a>
         </div>
@@ -54,14 +59,16 @@ const About = () => {
       {/* Right Column */}
       <div className="md:col-span-7">
         <div
-          className={`${
-            theme
-              ? `bg-[${darkContentBg}] rounded-3xl shadow-md p-6`
-              : "bg-[#FFF8F0] rounded-3xl border shadow-md p-6"
-          }`}
+          className={`rounded-3xl shadow-md p-6 transition-colors duration-500
+            ${
+              theme
+                ? `bg-gradient-to-r from-[#3B3A36] to-[#4A4843]`
+                : "bg-gradient-to-r from-[#FFF8F0] to-[#FFEBCD]"
+            }
+          `}
         >
-          <h1 className="font-bold text-3xl sm:text-4xl mb-6">
-            "I’m Jayasuriya, coding from the heart of Coimbatore"
+          <h1 className="font-bold text-3xl sm:text-4xl mb-6 text-amber-400 animate-[pulse_3s_infinite]">
+            "Who’s this mysterious code-slinger? Oh right, it’s me – Jayasuriya from Coimbatore."
           </h1>
 
           {/* Experience Card */}
@@ -91,7 +98,7 @@ const About = () => {
               <div>
                 <span className="font-bold">Accenture</span>
                 <div className="text-sm text-gray-400 dark:text-gray-300">
-                  Associate Software Engineer
+                  Associate Software Engineer <em>(bug tamer extraordinaire)</em>
                   <span className="ml-4 text-gray-400">2023 - 2025</span>
                 </div>
               </div>
@@ -100,24 +107,18 @@ const About = () => {
 
           {/* About Paragraph */}
           <p className="text-lg leading-relaxed">
-            During my time at Accenture, I’ve had the opportunity to contribute
-            to a range of enterprise-level applications, focusing on building
-            scalable and performant front-end solutions using technologies like
-            React.js, Redux, and Tailwind CSS. My work has centered on enhancing
-            user experience, improving application performance, and delivering
-            modular, maintainable code. These experiences have strengthened my
-            ability to solve complex problems while maintaining a user-centric
-            approach to development.
+            While at Accenture I helped build enterprise web apps that hundreds
+            of users rely on every day. I focused on creating scalable, snappy
+            front-end code with React, Redux, and Tailwind CSS—think high performance
+            meets neat architecture. I also learned that &#34;it works on my
+            machine&#34; isn’t a valid QA strategy (still learning).
             <br />
             <br />
-            Alongside my professional work, I’ve developed several personal
-            projects that showcase my enthusiasm for modern web development.
-            These include fully functional clones of platforms like Netflix,
-            YouTube, and Swiggy, where I applied best practices in responsive
-            design, clean component architecture, and intuitive UI/UX. These
-            projects not only reflect my technical capabilities but also my
-            passion for continuous learning and building polished, real-world
-            applications.
+            In my free time I build side projects just to stay sharp and to avoid
+            staring at my ceiling at 2am. You’ll find clones of Netflix, YouTube,
+            and Swiggy in my GitHub, all made with responsive design, clean
+            component architecture, and a dash of reckless experimentation. If
+            code is my craft, these projects are my playful sketches.
           </p>
         </div>
       </div>
